@@ -1,18 +1,7 @@
 import streamlit as st
+import pandas as pd
 
-st.title("Hello DS4")
-st.header("DS4 > DS3 == True")
+dataset = 'https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv'
+df = pd.read_csv(dataset)
 
-number1 = st.text_input("First number?")
-number2 = st.text_input("Second number?")
-
-st.title(int(number1) + int(number2))
-
-radio = st.radio("Pick an option:", ["Apple", "Pear", "Banana"])
-
-number = st.slider("Pick a quantity:", 1, 10)
-
-if number != 1:
-  radio += "s"
-
-st.title("You chose " + radio)
+df.head()
