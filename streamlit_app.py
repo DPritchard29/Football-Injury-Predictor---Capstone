@@ -15,4 +15,4 @@ number = st.slider("Pick a quantity:", 1, 10)
 if number != 1:
   radio =+ "s"
 
-st.title("You chose " + int(number) + " " + radio)
+st.title("You chose " + radio)
