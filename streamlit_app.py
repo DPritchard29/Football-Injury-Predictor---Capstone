@@ -11,3 +11,4 @@ df['Order Date'] = pd.to_datetime(df['Order Date'], format='%m/%d/%Y')
 graph = df.groupby(df['Order Date'].dt.month)['Sales'].sum()
 
 st.dataframe(graph)
+st.line_chart(data=graph, width=0, height=0, use_container_width=True)
