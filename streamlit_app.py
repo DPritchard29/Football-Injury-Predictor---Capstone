@@ -7,3 +7,5 @@ number1 = st.text_input("First number?")
 number2 = st.text_input("Second number?")
 
 st.title(int(number1) + int(number2))
+
+choice = st.radio("Pick an option:", ["Apple", "Pear", "Banana"])
