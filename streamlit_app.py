@@ -6,4 +6,3 @@ df = pd.read_csv(dataset)
 
 st.dataframe(df)
 
-st.line_chart(data=df, x = 'Row ID', y = 'Sales')
