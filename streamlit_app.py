@@ -10,4 +10,9 @@ st.title(int(number1) + int(number2))
 
 radio = st.radio("Pick an option:", ["Apple", "Pear", "Banana"])
 
-st.title("You chose " + radio)
+number - st.slider("Pick a quantity:", 1, 10)
+
+if number == 1:
+  st.title("You chose " + number + " " + radio)
+
+
