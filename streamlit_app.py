@@ -12,7 +12,7 @@ radio = st.radio("Pick an option:", ["Apple", "Pear", "Banana"])
 
 number = st.slider("Pick a quantity:", 1, 10)
 
-if number == 1:
-  st.title("You chose " + number + " " + radio)
+if number != 1:
+  radio =+ "s"
 
-
+st.title("You chose " + number + " " + radio)
