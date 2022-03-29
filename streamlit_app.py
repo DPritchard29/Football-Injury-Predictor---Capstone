@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import datetime
-import os
+
 
 dataset = 'https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv'
 df = pd.read_csv(dataset)
