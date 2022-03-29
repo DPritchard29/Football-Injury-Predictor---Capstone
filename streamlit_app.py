@@ -19,7 +19,7 @@ st.line_chart(data=graph2, width=0, height=0, use_container_width=True)
 dataset = 'dataset/Players_Combined_Cleaned.csv'
 df = pd.read_csv(dataset)
 st.dataframe(data=df, width=None, height=None)
-
+'''
 X = df[df.columns]
 X = sm.add_constant(X)
 y = df['Was_Injured?']
@@ -46,3 +46,4 @@ results = lg_reg.fit()
 X_train['target_pred'] = results.predict(X_train[cols])
 
 st.dataframe(data=X_train, width=None, height=None)
+'''
