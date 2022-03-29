@@ -13,6 +13,6 @@ graph = df.groupby(df['Order Date'].dt.month)['Sales'].sum()
 st.dataframe(graph)
 st.line_chart(data=graph, width=0, height=0, use_container_width=True)
 
-dataset2= 'https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv'
+dataset2= https://github.com/DPritchard29/Football-Injury-Predictor---Capstone/blob/master/dataset/Players_Combined_Cleaned.csv
 df2 = pd.read_csv(dataset2)
 graph2 = df2.groupby('Best Pos')[['Was_Injured?']].mean().sort_values(['Was_Injured?'], ascending = [False])
