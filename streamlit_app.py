@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import datetime
 import statsmodels.api as sm
-from sklearn.model_selection import train_test_split
+
 
 '''
 dataset2 = 'https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv'
