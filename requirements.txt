@@ -3,5 +3,4 @@ pandas
 streamlit
 numpy
 click==8
-sklearn.model_selection
 statsmodels.api
