@@ -4,22 +4,10 @@ import pandas as pd
 import datetime
 
 
-'''
-dataset2 = 'https://raw.githubusercontent.com/jeaggo/tc3068/master/Superstore.csv'
-df2 = pd.read_csv(dataset2)
-
-df2['Order Date'] = pd.to_datetime(df2['Order Date'], format='%m/%d/%Y')
-graph2 = df2.groupby(df2['Order Date'].dt.month)['Sales'].sum()
-
-st2.dataframe(graph2)
-st.line_chart(data=graph2, width=0, height=0, use_container_width=True)
-'''
-
-
 dataset = 'dataset/Players_Combined_Cleaned.csv'
 df = pd.read_csv(dataset)
 st.dataframe(data=df, width=None, height=None)
-'''
+
 X = df[df.columns]
 X = sm.add_constant(X)
 y = df['Was_Injured?']
@@ -46,4 +34,52 @@ results = lg_reg.fit()
 X_train['target_pred'] = results.predict(X_train[cols])
 
 st.dataframe(data=X_train, width=None, height=None)
-'''
+
+player_info = {"Age": [20],
+              "Work_Rate": [15],
+              "% Games Played When Fit": [0.8],
+              "Club_Arsenal": [0],
+              "Club_Aston Villa": [0],
+              "Club_Brighton": [0],
+              "Club_Burnley": [0],
+              "Club_Chelsea": [0],
+              "Club_Crystal Palace": [0],
+              "Club_Everton": [1],
+              "Club_Fulham": [0],
+              "Club_Leeds United": [0],
+              "Club_Leicester City": [0],
+              "Club_Liverpool FC": [0],
+              "Club_Manchester City": [0],
+              "Club_Manchester United": [0],
+              "Club_Newcastle United": [0],
+              "Club_Sheffield United": [0],
+              "Club_Southampton": [0],
+              "Club_Tottenham Hotspur": [0],
+              "Club_West Bromwich Albion": [0],
+              "Club_West Ham United": [0],
+              "Club_Wolverhampton Wanderers": [0],
+              "Best Pos_CM": [1],
+              "Best Pos_GK": [0],
+              "Best Pos_LD": [0],
+              "Best Pos_LM": [0],
+              "Best Pos_RD": [0],
+              "Best Pos_RM": [0],
+              "Best Pos_ST": [0],
+              "Best Pos_CD": [0]
+              }
+
+def injury_calculator(player_info):
+    df = pd.DataFrame(player_info)
+    df['target_pred'] = results.predict(df[cols])
+    if df['target_pred'][0] &gt; 0.75:
+        risk = 'High risk'
+    elif df['target_pred'][0] &gt; 0.57:
+        risk = 'Medium risk'
+    else:
+        risk = 'Low risk'
+    
+    expected_games_missed = int(round((2.718**((df['target_pred'][0])*-1))*20, 0))
+    print(f'Expected games missed = {expected_games_missed}')
+    print(f'This player is = {risk}')
+
+injury_calculator(player_info)
