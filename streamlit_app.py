@@ -71,9 +71,9 @@ player_info = {"Age": [20],
 def injury_calculator(player_info):
     df = pd.DataFrame(player_info)
     df['target_pred'] = results.predict(df[cols])
-    if df['target_pred'][0] &gt; 0.75:
+    if df['target_pred'][0] > 0.75:
         risk = 'High risk'
-    elif df['target_pred'][0] &gt; 0.57:
+    elif df['target_pred'][0] > 0.57:
         risk = 'Medium risk'
     else:
         risk = 'Low risk'
