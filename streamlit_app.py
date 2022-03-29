@@ -22,7 +22,7 @@ st.dataframe(data=df2, width=None, height=None)
 
 
 
-''
+'''
 graph2 = df2.groupby('Best Pos')[['Was_Injured?']].mean().sort_values(['Was_Injured?'], ascending = [False])
 st.line_chart(data=graph2, width=0, height=0, use_container_width=True)
 '''
