@@ -14,12 +14,15 @@ st.dataframe(graph)
 st.line_chart(data=graph, width=0, height=0, use_container_width=True)
 
 dataset2 = 'dataset/Players_Combined_Cleaned.csv'
-#dataset2= 'https://github.com/DPritchard29/Football-Injury-Predictor---Capstone/blob/master/dataset/Players_Combined_Cleaned.csv'
-st.dataframe(data=dataset2, width=None, height=None)
-
-
-'''
 df2 = pd.read_csv(dataset2)
+st.dataframe(data=df2, width=None, height=None)
+
+
+#dataset2= 'https://github.com/DPritchard29/Football-Injury-Predictor---Capstone/blob/master/dataset/Players_Combined_Cleaned.csv'
+
+
+
+''
 graph2 = df2.groupby('Best Pos')[['Was_Injured?']].mean().sort_values(['Was_Injured?'], ascending = [False])
 st.line_chart(data=graph2, width=0, height=0, use_container_width=True)
 '''
