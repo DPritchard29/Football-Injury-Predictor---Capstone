@@ -13,7 +13,8 @@ graph = df.groupby(df['Order Date'].dt.month)['Sales'].sum()
 st.dataframe(graph)
 st.line_chart(data=graph, width=0, height=0, use_container_width=True)
 
-dataset2= 'https://github.com/DPritchard29/Football-Injury-Predictor---Capstone/blob/master/dataset/Players_Combined_Cleaned.csv'
+dataset2 = 'dataset/Players_Combined_Cleaned.csv'
+#dataset2= 'https://github.com/DPritchard29/Football-Injury-Predictor---Capstone/blob/master/dataset/Players_Combined_Cleaned.csv'
 st.dataframe(data=dataset2, width=None, height=None)
 
 
