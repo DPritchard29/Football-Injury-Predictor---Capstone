@@ -127,9 +127,9 @@ def risk_calc(pred_calc):
 def expected_games_missed(pred_calc):
   expected_games_missed = int(round((2.718**((pred_calc)*8))*0.02,0))
   if expected_games_missed == 1:
-    return 'This player is expected to miss ' + str(expected_games_missed(pred_calc)) + ' game per season.'
+    return 'This player is expected to miss ' + str(expected_games_missed) + ' game per season.'
   else:
-    return 'This player is expected to miss ' + str(expected_games_missed(pred_calc)) + ' games per season.'
+    return 'This player is expected to miss ' + str(expected_games_missed) + ' games per season.'
   
  
   
