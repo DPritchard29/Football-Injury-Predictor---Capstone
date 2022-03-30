@@ -52,7 +52,7 @@ def risk_calc(pred_calc):
     return 'Low risk'
 
 def expected_games_missed(pred_calc):
-  expected_games_missed = round((2.718**((pred_calc)*8))*0.02,0)
+  expected_games_missed = int(round((2.718**((pred_calc)*8))*0.02,0))
   return expected_games_missed
   
   
