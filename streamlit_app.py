@@ -84,7 +84,7 @@ def expected_games_missed(pred_calc):
   expected_games_missed = int(round((2.718**((pred_calc)*8))*0.02,0))
   return expected_games_missed
   
-player_info['Club_Burnley'] = 1  
+player_info['Club_' + club_select] = 1  
   
 st.text(player_info['Club_Burnley'])
 st.text(pred_calc)
