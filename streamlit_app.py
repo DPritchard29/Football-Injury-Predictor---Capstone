@@ -5,9 +5,13 @@ import datetime
 
 age = st.slider('Age', min_value = 18, max_value = 28)
 work_rate = st.slider('Work Rate', min_value = 0, max_value = 20)
-player_importance = st.selectbox('Importance of player', ('Star Player', 'First Team', 'Rotation', 'Sporadic', 'Backup'))
+player_importance_select = st.selectbox('Importance of player', ('Star Player', 'First Team', 'Rotation', 'Sporadic', 'Backup'))
 
-
+player_importance = {'Star Player': 0.9,
+                            'First Team': 0.7,
+                            'Rotation': 0.5,
+                            'Sporadic': 0.3,
+                            'Backup': 0.1}
 
 
 player_info = {"Age": age,
@@ -40,8 +44,7 @@ player_info = {"Age": age,
               "Best Pos_RD": 0,
               "Best Pos_RM": 0,
               "Best Pos_ST": 0,
-              "Best Pos_CD": 0
-              }
+              "Best Pos_CD": 0}
 
 
 
@@ -65,3 +68,4 @@ st.text(player_info['Age'])
 st.text(pred_calc)
 st.text(risk_calc(pred_calc))
 st.text(expected_games_missed(pred_calc))
+st.text(player_importance[player_importance_select])
