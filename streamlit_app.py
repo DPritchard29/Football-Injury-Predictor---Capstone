@@ -13,7 +13,7 @@ player_importance = {'Star Player': 0.9,
                             'Sporadic': 0.3,
                             'Backup': 0.1}
 
-club_select = st.selectbox('Select a club for your player',
+position_select = st.selectbox("Select your player's position",
                            ('Goalkeeper',
                             'Left Defense',
                             'Centre Defense',
@@ -23,7 +23,7 @@ club_select = st.selectbox('Select a club for your player',
                             'Right Midfield',
                             'Striker'))
 
-position_select = st.selectbox("Select your player's position",
+club_select = st.selectbox('Select a club for your player',
                            ('Arsenal',
                             'Aston Villa',
                             'Brighton',
