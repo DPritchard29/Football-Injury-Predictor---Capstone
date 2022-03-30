@@ -3,9 +3,20 @@ import numpy as np
 import pandas as pd
 import datetime
 
-age = st.slider('Age', min_value = 18, max_value = 28)
-work_rate = st.slider('Work Rate', min_value = 0, max_value = 20)
-player_importance_select = st.selectbox('Importance of player', ('Star Player', 'First Team', 'Rotation', 'Sporadic', 'Backup'))
+age = st.slider('Age',
+                min_value = 18,
+                max_value = 28)
+
+work_rate = st.slider('Work Rate',
+                      min_value = 0,
+                      max_value = 20)
+
+player_importance_select = st.selectbox('Importance of player',
+                                        ('Star Player',
+                                         'First Team',
+                                         'Rotation',
+                                         'Sporadic',
+                                         'Backup'))
 
 player_importance = {'Star Player': 0.9,
                             'First Team': 0.7,
