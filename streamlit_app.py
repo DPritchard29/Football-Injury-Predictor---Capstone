@@ -51,4 +51,4 @@ else:
 
 st.text(player_info['Age'])
 st.text(risk)
-st.text('HEllO) 
+st.text('HEllO') 
