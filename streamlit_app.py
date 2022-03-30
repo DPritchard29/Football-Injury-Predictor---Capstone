@@ -37,3 +37,4 @@ player_info = {"Age": [20],
               "Best Pos_CD": [0]
               }
 
+st.text('Hello')
