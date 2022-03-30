@@ -58,4 +58,4 @@ def expected_games_missed(pred_calc):
 st.text(player_info['Age'])
 st.text(pred_calc)
 st.text(risk_calc(pred_calc))
-st.text(expected_games_missed(pred_calc) 
+st.text(expected_games_missed(pred_calc))
