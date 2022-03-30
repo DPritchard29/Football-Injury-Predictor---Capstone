@@ -4,9 +4,10 @@ import pandas as pd
 import datetime
 
 age = st.slider('Age', min_value = 18, max_value = 28)
+work_rate = st.slider('Work Rate', min_value = 0, max_value = 20)
 
 player_info = {"Age": age,
-              "Work_Rate": 14,
+              "Work_Rate": work_rate,
               "% Games Played When Fit": 0.514286,
               "Club_Arsenal": 0,
               "Club_Aston Villa": 0,
