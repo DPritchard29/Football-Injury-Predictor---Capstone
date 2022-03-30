@@ -16,7 +16,7 @@ player_importance = {'Star Player': 0.9,
 
 player_info = {"Age": age,
               "Work_Rate": work_rate,
-              "% Games Played When Fit": 0.514286,
+              "% Games Played When Fit": player_importance[player_importance_select],
               "Club_Arsenal": 0,
               "Club_Aston Villa": 0,
               "Club_Brighton": 0,
