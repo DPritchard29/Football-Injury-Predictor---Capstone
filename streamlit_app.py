@@ -3,8 +3,9 @@ import numpy as np
 import pandas as pd
 import datetime
 
+age = st.slider('Age', min_value = 18, max_value = 28)
 
-player_info = {"Age": 26,
+player_info = {"Age": age,
               "Work_Rate": 14,
               "% Games Played When Fit": 0.514286,
               "Club_Arsenal": 0,
