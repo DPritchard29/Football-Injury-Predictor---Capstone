@@ -33,7 +33,29 @@ club_select = st.selectbox('Select a club for your player',
                             'Tottenham',
                             'West Bromwich Albion',
                             'West Ham',
-                            'Wolverhampton Wanderers'))                      
+                            'Wolverhampton Wanderers'))
+
+position_select = st.selectbox("Select your player's position',
+                           ('Arsenal',
+                            'Aston Villa',
+                            'Brighton',
+                            'Burnley',
+                            'Chelsea',
+                            'Crystal Palace',
+                            'Everton',
+                            'Fulham',
+                            'Leeds',
+                            'Leicester',
+                            'Liverpool',
+                            'Manchester City',
+                            'Manchester United',
+                            'Newcastle',
+                            'Sheffield United',
+                            'Southampton',
+                            'Tottenham',
+                            'West Bromwich Albion',
+                            'West Ham',
+                            'Wolverhampton Wanderers'))
 
 
 player_info = {"Age": age,
