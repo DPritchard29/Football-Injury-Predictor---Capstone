@@ -22,17 +22,17 @@ club_select = st.selectbox('Select a club for your player',
                             'Crystal Palace',
                             'Everton',
                             'Fulham',
-                            'Leeds United',
-                            'Leicester City',
-                            'Liverpool FC',
+                            'Leeds',
+                            'Leicester',
+                            'Liverpool',
                             'Manchester City',
                             'Manchester United',
-                            'Newcastle United',
+                            'Newcastle',
                             'Sheffield United',
                             'Southampton',
-                            'Tottenham Hotspur',
+                            'Tottenham',
                             'West Bromwich Albion',
-                            'West Ham United',
+                            'West Ham',
                             'Wolverhampton Wanderers'))                      
 
 
@@ -47,17 +47,17 @@ player_info = {"Age": age,
               "Club_Crystal Palace": 0,
               "Club_Everton": 0,
               "Club_Fulham": 0,
-              "Club_Leeds United": 0,
-              "Club_Leicester City": 0,
-              "Club_Liverpool FC": 0,
+              "Club_Leeds": 0,
+              "Club_Leicester": 0,
+              "Club_Liverpool": 0,
               "Club_Manchester City": 0,
               "Club_Manchester United": 0,
-              "Club_Newcastle United": 0,
+              "Club_Newcastle": 0,
               "Club_Sheffield United": 0,
               "Club_Southampton": 0,
-              "Club_Tottenham Hotspur": 0,
+              "Club_Tottenham": 0,
               "Club_West Bromwich Albion": 0,
-              "Club_West Ham United": 0,
+              "Club_West Ham": 0,
               "Club_Wolverhampton Wanderers": 0,
               "Best Pos_CM": 0,
               "Best Pos_GK": 0,
@@ -70,7 +70,7 @@ player_info = {"Age": age,
 
 player_info['Club_' + club_select] = 1 
 
-pred_calc = (2.71828 ** (0.001416+ (0.0473*player_info['Age'])+ (0.0742*player_info['Work_Rate'])+ (1.6308*player_info['% Games Played When Fit'])- (0.1082*player_info['Club_Arsenal'])- (1.7763*player_info['Club_Aston Villa'])- (0.8425*player_info['Club_Brighton'])+ (0.0778*player_info['Club_Burnley'])- (0.2886*player_info['Club_Chelsea'])- (0.8169*player_info['Club_Crystal Palace'])- (0.1118*player_info['Club_Everton'])- (1.0453*player_info['Club_Fulham'])- (1.5009*player_info['Club_Leeds United'])- (0.6155*player_info['Club_Leicester City'])+ (0.0972*player_info['Club_Liverpool FC'])- (0.1572*player_info['Club_Manchester City'])- (0.5927*player_info['Club_Manchester United'])- (0.1186*player_info['Club_Newcastle United'])- (1.1161*player_info['Club_Sheffield United'])- (0.7287*player_info['Club_Southampton'])- (0.2732*player_info['Club_Tottenham Hotspur'])- (2.3910*player_info['Club_West Bromwich Albion'])+ (0.0206*player_info['Club_West Ham United'])- (1.2760*player_info['Club_Wolverhampton Wanderers'])- (2.0324*player_info['Best Pos_CM'])- (2.4456*player_info['Best Pos_GK'])- (0.8274*player_info['Best Pos_LD'])- (1.3731*player_info['Best Pos_LM'])- (1.7715*player_info['Best Pos_RD'])- (1.7552*player_info['Best Pos_RM'])- (2.1189*player_info['Best Pos_ST'])- (1.2397*player_info['Best Pos_CD']))) / (1+ (2.71828 ** (0.001416+ (0.0473*player_info['Age'])+ (0.0742*player_info['Work_Rate'])+ (1.6308*player_info['% Games Played When Fit'])- (0.1082*player_info['Club_Arsenal'])- (1.7763*player_info['Club_Aston Villa'])- (0.8425*player_info['Club_Brighton'])+ (0.0778*player_info['Club_Burnley'])- (0.2886*player_info['Club_Chelsea'])- (0.8169*player_info['Club_Crystal Palace'])- (0.1118*player_info['Club_Everton'])- (1.0453*player_info['Club_Fulham'])- (1.5009*player_info['Club_Leeds United'])- (0.6155*player_info['Club_Leicester City'])+ (0.0972*player_info['Club_Liverpool FC'])- (0.1572*player_info['Club_Manchester City'])- (0.5927*player_info['Club_Manchester United'])- (0.1186*player_info['Club_Newcastle United'])- (1.1161*player_info['Club_Sheffield United'])- (0.7287*player_info['Club_Southampton'])- (0.2732*player_info['Club_Tottenham Hotspur'])- (2.3910*player_info['Club_West Bromwich Albion'])+ (0.0206*player_info['Club_West Ham United'])- (1.2760*player_info['Club_Wolverhampton Wanderers'])- (2.0324*player_info['Best Pos_CM'])- (2.4456*player_info['Best Pos_GK'])- (0.8274*player_info['Best Pos_LD'])- (1.3731*player_info['Best Pos_LM'])- (1.7715*player_info['Best Pos_RD'])- (1.7552*player_info['Best Pos_RM'])- (2.1189*player_info['Best Pos_ST'])- (1.2397*player_info['Best Pos_CD']))))
+pred_calc = (2.71828 ** (0.001416+ (0.0473*player_info['Age'])+ (0.0742*player_info['Work_Rate'])+ (1.6308*player_info['% Games Played When Fit'])- (0.1082*player_info['Club_Arsenal'])- (1.7763*player_info['Club_Aston Villa'])- (0.8425*player_info['Club_Brighton'])+ (0.0778*player_info['Club_Burnley'])- (0.2886*player_info['Club_Chelsea'])- (0.8169*player_info['Club_Crystal Palace'])- (0.1118*player_info['Club_Everton'])- (1.0453*player_info['Club_Fulham'])- (1.5009*player_info['Club_Leeds'])- (0.6155*player_info['Club_Leicester'])+ (0.0972*player_info['Club_Liverpool'])- (0.1572*player_info['Club_Manchester City'])- (0.5927*player_info['Club_Manchester United'])- (0.1186*player_info['Club_Newcastle'])- (1.1161*player_info['Club_Sheffield United'])- (0.7287*player_info['Club_Southampton'])- (0.2732*player_info['Club_Tottenham'])- (2.3910*player_info['Club_West Bromwich Albion'])+ (0.0206*player_info['Club_West Ham'])- (1.2760*player_info['Club_Wolverhampton Wanderers'])- (2.0324*player_info['Best Pos_CM'])- (2.4456*player_info['Best Pos_GK'])- (0.8274*player_info['Best Pos_LD'])- (1.3731*player_info['Best Pos_LM'])- (1.7715*player_info['Best Pos_RD'])- (1.7552*player_info['Best Pos_RM'])- (2.1189*player_info['Best Pos_ST'])- (1.2397*player_info['Best Pos_CD']))) / (1+ (2.71828 ** (0.001416+ (0.0473*player_info['Age'])+ (0.0742*player_info['Work_Rate'])+ (1.6308*player_info['% Games Played When Fit'])- (0.1082*player_info['Club_Arsenal'])- (1.7763*player_info['Club_Aston Villa'])- (0.8425*player_info['Club_Brighton'])+ (0.0778*player_info['Club_Burnley'])- (0.2886*player_info['Club_Chelsea'])- (0.8169*player_info['Club_Crystal Palace'])- (0.1118*player_info['Club_Everton'])- (1.0453*player_info['Club_Fulham'])- (1.5009*player_info['Club_Leeds'])- (0.6155*player_info['Club_Leicester'])+ (0.0972*player_info['Club_Liverpool'])- (0.1572*player_info['Club_Manchester City'])- (0.5927*player_info['Club_Manchester United'])- (0.1186*player_info['Club_Newcastle'])- (1.1161*player_info['Club_Sheffield United'])- (0.7287*player_info['Club_Southampton'])- (0.2732*player_info['Club_Tottenham'])- (2.3910*player_info['Club_West Bromwich Albion'])+ (0.0206*player_info['Club_West Ham'])- (1.2760*player_info['Club_Wolverhampton Wanderers'])- (2.0324*player_info['Best Pos_CM'])- (2.4456*player_info['Best Pos_GK'])- (0.8274*player_info['Best Pos_LD'])- (1.3731*player_info['Best Pos_LM'])- (1.7715*player_info['Best Pos_RD'])- (1.7552*player_info['Best Pos_RM'])- (2.1189*player_info['Best Pos_ST'])- (1.2397*player_info['Best Pos_CD']))))
 
 def risk_calc(pred_calc):
   if pred_calc > 0.75:
