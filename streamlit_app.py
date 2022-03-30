@@ -48,7 +48,7 @@ elif pred_calc > 0.57:
 else:
   risk = 'Low risk'
    
-expected_games_missed = int(round((2.718**((pred_calc*(-1)))*20, 0))
+expected_games_missed = int((2.718**((pred_calc*(-1)))*20)
 
 
 st.text(player_info['Age'])
