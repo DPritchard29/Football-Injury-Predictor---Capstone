@@ -37,4 +37,4 @@ player_info = {"Age": 20,
               "Best Pos_CD": 0
               }
 
-st.text(player_info('Age'))
+st.text(player_info['Age'])
