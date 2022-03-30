@@ -13,6 +13,28 @@ player_importance = {'Star Player': 0.9,
                             'Sporadic': 0.3,
                             'Backup': 0.1}
 
+club_select = st.selectbox('Select a club for your player',
+                           ('Arsenal',
+                            'Aston Villa',
+                            'Brighton',
+                            'Burnley',
+                            'Chelsea',
+                            'Crystal Palace',
+                            'Everton',
+                            'Fulham',
+                            'Leeds United',
+                            'Leicester City',
+                            'Liverpool FC',
+                            'Manchester City',
+                            'Manchester United',
+                            'Newcastle United',
+                            'Sheffield United',
+                            'Southampton',
+                            'Tottenham Hotspur',
+                            'West Bromwich Albion',
+                            'West Ham United',
+                            'Wolverhampton Wanderers'))                      
+
 
 player_info = {"Age": age,
               "Work_Rate": work_rate,
