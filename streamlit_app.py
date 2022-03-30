@@ -28,8 +28,8 @@ club_select = st.selectbox('Select a club you are recruiting for:',
 
 
 age = st.slider("Select the player's age",
-                min_value = 18,
-                max_value = 28)
+                min_value = 16,
+                max_value = 38)
 
 work_rate = st.slider("Select the player's work rate",
                       min_value = 0,
