@@ -49,7 +49,13 @@ def risk_calc(pred_calc):
   else:
     return 'Low risk'
 
+def expected_games_missed(pred_calc):
+  expected_games_missed = int(round((2.718**((pred_calc)*-1))*20, 0))
+  return expected_games_missed
+  
+  
+  
 st.text(player_info['Age'])
 st.text(pred_calc)
 st.text(risk_calc(pred_calc))
-st.text('HEllO') 
+st.text(_games_missed(pred_calc) 
