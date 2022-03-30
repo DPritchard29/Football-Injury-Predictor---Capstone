@@ -132,5 +132,5 @@ def expected_games_missed(pred_calc):
     return 'This player is expected to miss ' + str(expected_games_missed) + ' games per season.'
   
  
-st.text(risk_calc(pred_calc))
-st.text(expected_games_missed(pred_calc))
+st.header(risk_calc(pred_calc))
+st.header(expected_games_missed(pred_calc))
