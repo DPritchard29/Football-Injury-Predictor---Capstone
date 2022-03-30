@@ -5,6 +5,10 @@ import datetime
 
 age = st.slider('Age', min_value = 18, max_value = 28)
 work_rate = st.slider('Work Rate', min_value = 0, max_value = 20)
+player_importance = st.selectbox('Importance of player', ('Star Player', 'First Team', 'Rotation', 'Sporadic', 'Backup'))
+
+
+
 
 player_info = {"Age": age,
               "Work_Rate": work_rate,
