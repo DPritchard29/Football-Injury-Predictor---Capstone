@@ -2,38 +2,9 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-age = st.slider('Age',
-                min_value = 18,
-                max_value = 28)
+st.header('Welcome to the football player injury predictor!')
 
-work_rate = st.slider('Work Rate',
-                      min_value = 0,
-                      max_value = 20)
-
-player_importance_select = st.selectbox('Importance of player',
-                                        ('Star Player',
-                                         'First Team',
-                                         'Rotation',
-                                         'Sporadic',
-                                         'Backup'))
-
-player_importance = {'Star Player': 0.9,
-                            'First Team': 0.7,
-                            'Rotation': 0.5,
-                            'Sporadic': 0.3,
-                            'Backup': 0.1}
-
-position_select = st.selectbox("Select your player's position",
-                           ('Goalkeeper',
-                            'Left Defense',
-                            'Centre Defense',
-                            'Right Defense',
-                            'Left Midfield',
-                            'Centre Midfield',
-                            'Right Midfield',
-                            'Striker'))
-
-club_select = st.selectbox('Select a club for your player',
+club_select = st.selectbox('Select a club you are recruiting for:',
                            ('Arsenal',
                             'Aston Villa',
                             'Brighton',
@@ -55,6 +26,38 @@ club_select = st.selectbox('Select a club for your player',
                             'West Ham',
                             'Wolverhampton Wanderers'))
 
+
+age = st.slider("Select the player's age",
+                min_value = 18,
+                max_value = 28)
+
+work_rate = st.slider("Select the player's work rate",
+                      min_value = 0,
+                      max_value = 20)
+
+position_select = st.selectbox("Select the player's position",
+                           ('Goalkeeper',
+                            'Left Defense',
+                            'Centre Defense',
+                            'Right Defense',
+                            'Left Midfield',
+                            'Centre Midfield',
+                            'Right Midfield',
+                            'Striker'))
+
+player_importance_select = st.selectbox('How important the the club will the player be?',
+                                        ('Star Player',
+                                         'First Team',
+                                         'Rotation',
+                                         'Sporadic',
+                                         'Backup'))
+
+
+player_importance = {'Star Player': 0.9,
+                            'First Team': 0.7,
+                            'Rotation': 0.5,
+                            'Sporadic': 0.3,
+                            'Backup': 0.1}
 
 player_info = {"Age": age,
               "Work_Rate": work_rate,
