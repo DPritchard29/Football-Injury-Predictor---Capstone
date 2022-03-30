@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.header('Welcome to the football player injury predictor!')
+st.header('Welcome to the footballer injury predictor!')
 
 club_select = st.selectbox('Select a club you are recruiting for:',
                            ('Arsenal',
@@ -132,10 +132,5 @@ def expected_games_missed(pred_calc):
     return 'This player is expected to miss ' + str(expected_games_missed) + ' games per season.'
   
  
-  
-st.text(player_info['Best Pos_LM'])
-st.text(player_info['Club_Burnley'])
-st.text(pred_calc)
 st.text(risk_calc(pred_calc))
 st.text(expected_games_missed(pred_calc))
-st.text(player_importance[player_importance_select])
