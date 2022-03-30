@@ -35,7 +35,7 @@ club_select = st.selectbox('Select a club for your player',
                             'West Ham',
                             'Wolverhampton Wanderers'))
 
-position_select = st.selectbox("Select your player's position',
+position_select = st.selectbox("Select your player's position",
                            ('Arsenal',
                             'Aston Villa',
                             'Brighton',
