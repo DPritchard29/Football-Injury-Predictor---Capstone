@@ -52,7 +52,7 @@ player_info = {"Age": age,
               "Club_Liverpool FC": 0,
               "Club_Manchester City": 0,
               "Club_Manchester United": 0,
-              "Club_Newcastle United": 1,
+              "Club_Newcastle United": 0,
               "Club_Sheffield United": 0,
               "Club_Southampton": 0,
               "Club_Tottenham Hotspur": 0,
@@ -86,7 +86,7 @@ def expected_games_missed(pred_calc):
   
   
   
-st.text(player_info['Age'])
+st.text(player_info['Club_Burnley'])
 st.text(pred_calc)
 st.text(risk_calc(pred_calc))
 st.text(expected_games_missed(pred_calc))
