@@ -126,7 +126,10 @@ def risk_calc(pred_calc):
 
 def expected_games_missed(pred_calc):
   expected_games_missed = int(round((2.718**((pred_calc)*8))*0.02,0))
-  return expected_games_missed
+  if expected_games_missed == 1:
+    return 'This player is expected to miss ' + str(expected_games_missed(pred_calc)) + ' game per season.'
+  else:
+    return 'This player is expected to miss ' + str(expected_games_missed(pred_calc)) + ' games per season.'
   
  
   
@@ -134,5 +137,5 @@ st.text(player_info['Best Pos_LM'])
 st.text(player_info['Club_Burnley'])
 st.text(pred_calc)
 st.text(risk_calc(pred_calc))
-st.text('This player is expected to miss ' + str(expected_games_missed(pred_calc)) + ' games per season.')
+st.text(expected_games_missed(pred_calc))
 st.text(player_importance[player_importance_select])
