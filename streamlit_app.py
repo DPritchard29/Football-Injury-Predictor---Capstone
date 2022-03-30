@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import datetime
 
 age = st.slider('Age',
                 min_value = 18,
