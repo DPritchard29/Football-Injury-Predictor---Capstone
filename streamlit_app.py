@@ -118,11 +118,11 @@ pred_calc = (2.71828 ** (0.001416+ (0.0473*player_info['Age'])+ (0.0742*player_i
 
 def risk_calc(pred_calc):
   if pred_calc > 0.75:
-    return 'High risk'
+    return 'Risk of injury: High risk'
   elif pred_calc > 0.57:
-    return 'Medium risk'
+    return 'Risk of injury: Medium risk'
   else:
-    return 'Low risk'
+    return 'Risk of injury: Low risk'
 
 def expected_games_missed(pred_calc):
   expected_games_missed = int(round((2.718**((pred_calc)*8))*0.02,0))
@@ -133,6 +133,6 @@ def expected_games_missed(pred_calc):
 st.text(player_info['Best Pos_LM'])
 st.text(player_info['Club_Burnley'])
 st.text(pred_calc)
-st.text('Risk of injury: ' risk_calc(pred_calc))
+st.text(risk_calc(pred_calc))
 st.text('This player is expected to miss ' expected_games_missed(pred_calc) ' games per season.)
 st.text(player_importance[player_importance_select])
