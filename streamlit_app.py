@@ -53,4 +53,4 @@ expected_games_missed = int(round((2.718**((pred_calc*-1))*20, 0))
 
 st.text(player_info['Age'])
 st.text(expected_games_missed)
-st.text(risk)
+st.text(risk) 
