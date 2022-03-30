@@ -43,11 +43,11 @@ pred_calc = (2.71828 ** (0.001416+ (0.0473*player_info['Age'])+ (0.0742*player_i
 
 def risk_calc(pred_calc):
   if pred_calc > 0.75:
-    risk = 'High risk'
+    return 'High risk'
   elif pred_calc > 0.57:
-    risk = 'Medium risk'
+    return 'Medium risk'
   else:
-    risk = 'Low risk'
+    return 'Low risk'
 
 st.text(player_info['Age'])
 st.text(pred_calc)
