@@ -45,7 +45,7 @@ position_select = st.selectbox("Select the player's position",
                             'Right Midfield',
                             'Striker'))
 
-player_importance_select = st.selectbox('How important the the club will the player be?',
+player_importance_select = st.selectbox('How important to the club will the player be?',
                                         ('Star Player',
                                          'First Team',
                                          'Rotation',
